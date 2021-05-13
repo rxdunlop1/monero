@@ -86,7 +86,7 @@ otherwise the peer will not be notified of the peer address by the proxy.
 
 An anonymity network can be configured to forward incoming connections to a
 `monerod` RPC port - which is independent from the configuration for incoming
-P2P anonymity connections. The anonymity network (Tor/i2p) is
+P2P anonymity connections. The anonymity network (Tor/I2P) is
 [configured in the same manner](#configuration), except the localhost port
 must be the RPC port (typically 18081 for mainnet) instead of the p2p port:
 
@@ -95,16 +95,16 @@ HiddenServiceDir /var/lib/tor/data/monero
 HiddenServicePort 18081 127.0.0.1:18081
 ```
 
-Then the wallet will be configured to use a Tor/i2p address:
+Then the wallet will be configured to use a Tor/I2P address:
 ```
 --proxy 127.0.0.1:9050
 --daemon-address rveahdfho7wo4b2m.onion
 ```
 
 The proxy must match the address type - a Tor proxy will not work properly with
-i2p addresses, etc.
+I2P addresses, etc.
 
-i2p and onion addresses provide the information necessary to authenticate and
+I2P and onion addresses provide the information necessary to authenticate and
 encrypt the connection from end-to-end. If desired, SSL can also be applied to
 the connection with `--daemon-address https://rveahdfho7wo4b2m.onion` which
 requires a server certificate that is signed by a "root" certificate on the
