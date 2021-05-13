@@ -118,7 +118,7 @@ that was sent in the request message. The `Return Code` is specific to the
 `Command` being issued (see [commands])(#commands)).
 
 ### Fragmented
-Fragmented messages were introduced for the "white noise" feature for i2p/tor.
+Fragmented messages were introduced for the "white noise" feature for I2P/Tor.
 A transaction can be sent in fragments to conceal when "real" data is being
 sent instead of dummy messages. Only one fragmented message can be sent at a
 time, and bits `B` and `E` are never set at the same time
